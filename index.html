@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" spellcheck="false">
+    <head>
+        <meta charset="utf-8">
+        <title>Score Tracker</title>
+        <link rel="stylesheet" type="text/css" href="x.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <div id="main-container">
+            <h1>Imnonumbe's Score Tracker</h1>
+            <!--<h2>Input Polish</h2>
+            <textarea id="input-pl">Cześć!</textarea>
+            <h2>Or input Grepski</h2>
+            <textarea id="input-gr"></textarea>-->
+            <span id="dummy"></span>
+            <p><span id="switch">
+                Switch player who has positive score:<br>
+                <b id="positivename"></b>
+            </span></p>
+            <p><span id="swapnames">
+                <b>Swap players</b>
+            </span></p>
+            <p><span id="undo">
+                <b>Undo last removal</b>
+            </span></p>
+            <table id="scores">
+                <tr>
+                    <th class="dontborder"></th>
+                    <th class="dontborder"></th>
+                    <th class="player" contenteditable>Player 1</th>
+                    <th class="player" contenteditable>Player 2</th>
+                    <td class="dontborder difflabel">diff</td>
+                </tr>
+                <tr class="emptyrow">
+                    <td class="dontborder"></td>
+                    <td class="dontborder"></td>
+                    <td class="score" contenteditable></td>
+                    <td class="score" contenteditable></td>
+                    <th class="diff"></th>
+                </tr>
+                <tr id="sum">
+                    <td class="dontborder"></td>
+                    <td class="dontborder">sum</td>
+                    <th class="sum">0</th>
+                    <th class="sum">0</th>
+                    <td class="dontborder"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
