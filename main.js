@@ -1,7 +1,8 @@
 const empty = '<td class="dontborder"></td>',
     remove = '<td class="dontborder remove">X</td>',
     add = '<td class="dontborder add">+</td>',
-    singletd = '<td class="score" contenteditable></td>',
+    singletd =
+        '<td class="score" inputmode="numeric" contenteditable></td>',
     diff = '<th class="diff"></th>';
 
 $(document).ready(() => {
