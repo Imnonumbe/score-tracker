@@ -95,12 +95,12 @@ ${twochildren}${singletd.repeat(2)}${diff}\
             row.children().eq(1).text('+').addClass('add');
             addedListenersRow = row.next(),
             updatedSymbolsRow = row;
-            row.removeClass('emptyrow');
         } else {
             row.before(elementtext);
             addedListenersRow = row.prev(),
             updatedSymbolsRow = row.prev();
         }
+        updatedSymbolsRow.removeClass('emptyrow');
         addedListenersRow.children('.score')
             .on('input', inputOnTd).focus(focusOn);
         updatedSymbolsRow.children('.remove').click(removeRow);
